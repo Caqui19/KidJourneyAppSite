@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 150px;
 }
 
 header nav ul {
@@ -65,7 +65,7 @@ header nav ul li a:hover {
     border-left: 1px solid var(--border-color);
     z-index: 1000;
     height: 100%;
-    width: 60%;
+    width: 70%;
     overflow-y: auto;
 }
 
@@ -127,7 +127,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: calc(100dvh - 80px);
+    flex: 1;
     margin-top: 80px;
 }
 
@@ -301,7 +301,7 @@ article:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
 }
 
 .forumContainer p,
@@ -469,6 +469,74 @@ label {
     font-weight: 600;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-top: 1px solid var(--primary-color);
+    padding: 20px;
+    gap: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer div img {
+    width: 150px;
+}
+
+footer div p {
+    font-size: var(--big-size);
+    color: var(--primary-color);
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer div ul li a {
+    font-size: var(--biggest-size);
+    color: var(--primary-color);
+}
+
+footer div ul li a:hover {
+    filter: brightness(80%);
+}
+
+#footerHr {
+    background: var(--primary-color);
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-size: var(--regular-size);
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1680px) {
 
     .forumContainer,
@@ -560,6 +628,7 @@ label {
         width: 100%;
     }
 
+    footer div,
     .cadastroContainer,
     .appContainer,
     .mvvContainer div {
@@ -579,6 +648,7 @@ label {
         width: 120px;
     }
 
+    footer nav ul,
     .appContainer {
         gap: 10px;
     }
@@ -589,5 +659,9 @@ label {
 
     .cadastroContainer p {
         width: 100%;
+    }
+
+    .appContainer div {
+        gap: 20px;
     }
 }
