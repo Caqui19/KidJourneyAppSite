@@ -321,6 +321,9 @@ article:hover {
 
 .appContainer div div a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .appContainer div div a img {
