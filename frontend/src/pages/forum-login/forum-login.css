@@ -1,0 +1,349 @@
+.selecionado {
+    pointer-events: none;
+    font-weight: 600;
+}
+
+header {
+    padding-inline: 30px;
+    height: 80px;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--big-size);
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: background 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+}
+
+#hamburguer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: var(--biggest-size);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hamburguer:hover {
+    background: var(--secondary-color);
+}
+
+#menu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    top: 0;
+    right: 0;
+    background: var(--bg-color);
+    border-left: 1px solid var(--border-color);
+    z-index: 1000;
+    height: 100%;
+    width: 70%;
+    overflow-y: auto;
+}
+
+#menu div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+#menu div img {
+    width: 120px;
+}
+
+#menu div button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: var(--biggest-size);
+    padding: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+#menu div button:hover {
+    background: var(--secondary-color);
+}
+
+#menu nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+}
+
+#menu nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--bigger-size);
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: background 0.2s ease;
+}
+
+#menu nav ul li a:hover {
+    background: var(--secondary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    margin-top: 80px;
+    gap: 20px;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: var(--biggest-size);
+    color: var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 400px;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--title-color);
+    font-size: var(--regular-size);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--primary-color);
+    font-size: var(--regular-size);
+}
+
+.senhaContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.senhaContainer input {
+    width: 100%;
+    flex: 1;
+}
+
+.senhaContainer input {
+    padding-right: 40px;
+}
+
+.senhaContainer span {
+    position: absolute;
+    right: 10px;
+    font-size: var(--biggest-size);
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+form a {
+    font-size: var(--big-size);
+    color: var(--primary-color);
+    text-decoration: none;
+    width: fit-content;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    border: 1px solid var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: var(--regular-size);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit:hover {
+    filter: brightness(80%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-top: 1px solid var(--primary-color);
+    padding: 20px;
+    gap: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer div img {
+    width: 150px;
+}
+
+footer div p {
+    font-size: var(--big-size);
+    color: var(--primary-color);
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer div ul li a {
+    font-size: var(--biggest-size);
+    color: var(--primary-color);
+}
+
+footer div ul li a:hover {
+    filter: brightness(80%);
+}
+
+#footerHr {
+    background: var(--primary-color);
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-size: var(--regular-size);
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+    form {
+        min-width: 350px;
+    }
+
+    main h1 {
+        width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        height: 60px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    main {
+        margin-top: 60px;
+        height: calc(100dvh - 60px);
+    }
+
+    form {
+        min-width: 100%;
+    }
+
+    main h1 {
+        width: 100%;
+    }
+
+    #hamburguer {
+        display: flex;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
+
+    footer nav ul {
+        gap: 10px;
+    }
+}
