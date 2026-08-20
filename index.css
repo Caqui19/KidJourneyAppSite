@@ -143,7 +143,7 @@ main section:first-child {
     width: 100%;
     min-height: calc(100dvh - 80px);
     background: var(--secondary-color);
-    background-image: url('../../../assets/icons/icon.ico');
+    background-image: url('icon.ico');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 400px;
@@ -178,8 +178,8 @@ article:hover {
 }
 
 .logoMain {
-    width: 300px;
-    margin-top: 20px;
+    width: 100%;
+    margin-block: 20px;
 }
 
 .mvvContainer {
@@ -241,6 +241,7 @@ article:hover {
     color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
+    margin-block: 20px;
 }
 
 .liderancaContainer {
@@ -366,12 +367,49 @@ form {
     gap: 10px;
 }
 
-input {
+.primeiroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+}
+
+.primeiroContainer div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.segundoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+.segundoContainer h1,
+.primeiroContainer div h2 {
+    font-size: var(--biggest-size);
+    color: var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+.primeiroContainer div p {
+    font-size: var(--big-size);
+    color: var(--title-color);
+}
+
+input,
+textarea {
     padding: 10px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: var(--title-color);
     font-size: var(--regular-size);
+    resize: vertical;
 }
 
 .inputContainer {
@@ -474,6 +512,15 @@ label {
     width: 100%;
     text-align: center;
     font-weight: 600;
+}
+
+main section:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50dvw;
+    gap: 30px;
 }
 
 footer {
@@ -609,6 +656,10 @@ footer nav ul li a:hover {
         height: calc(100dvh - 60px);
     }
 
+    main section {
+        padding: 20px;
+    }
+
     #hamburguer {
         display: flex;
     }
@@ -670,5 +721,19 @@ footer nav ul li a:hover {
 
     .appContainer div {
         gap: 20px;
+    }
+
+    .segundoContainer {
+        width: 100%;
+    }
+
+    .primeiroContainer {
+        gap: 10px;
+    }
+
+    main section:last-child {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0;
     }
 }
